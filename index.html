@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una pregunta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-wrapper" id="mainWrapper">
+        <div class="container" id="container">
+            <div id="minigameCounter" class="counter-badge">Minijuegos: 0/0</div>
+            <div class="card" id="card">
+                <h1 id="question">¿Quieres ser mi San Valentín?</h1>
+
+                <div class="buttons" id="buttonsContainer">
+                    <button class="btn btn-yes" id="btnYes">Sí</button>
+                    <button class="btn btn-no" id="btnNo">No</button>
+                </div>
+
+                <!-- Minigame containers -->
+                <div class="minigame-box" id="minigameBox">
+                    <p class="minigame-title" id="minigameTitle"></p>
+                    <div class="minigame-content" id="minigameContent"></div>
+                </div>
+
+                <div class="event-box" id="eventBox">
+                    <img id="eventGif" src="" alt="">
+                    <p id="eventText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay para minijuegos fullscreen -->
+    <div class="game-overlay" id="gameOverlay">
+        <div class="game-container" id="gameContainer"></div>
+    </div>
+
+    <!-- Celebración -->
+    <div class="success-screen" id="successScreen">
+        <div class="confetti-container" id="confettiContainer"></div>
+        <div class="hearts-container" id="heartsContainer"></div>
+        <div class="success-content">
+            <h1 id="successTitle">BIEN</h1>
+            <p id="successMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
